@@ -1,0 +1,22 @@
+{
+  "name": "sportype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benedettoandrea/Sportype.git"
+  },
+  "author": "Andrea Benedetto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benedettoandrea/Sportype/issues"
+  },
+  "homepage": "https://github.com/benedettoandrea/Sportype#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
