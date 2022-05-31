@@ -31,12 +31,11 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./src/style.css" />
   </head>
   <body>
-    <header class="p-3 border-bottom fixed-top bg-white">
-      <!-- <nav class="navbar sticky-top navbar-expand-sm"> -->
-      <div class="container">
+    <header class="p-1 p-lg-3 border-bottom fixed-top bg-white">
+      <!-- <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <a
             href="/"
@@ -89,17 +88,77 @@
             </ul>
           </div>
         </div>
-      </div>
-      <!-- </nav> -->
+      </div> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white p-lg-0">
+        <div class="container">
+          <a class="navbar-brand" href="#">Sportype</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+              <form class="d-flex mb-3 mt-3 m-lg-auto">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cerchi uno sport?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sei una società?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="nav-link disabled">Utente</a></li>
+                  <li><a class="dropdown-item" href="#">Accedi</a></li>
+                  <li><a class="dropdown-item" href="#">Registrati</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="nav-link disabled">Società</a></li>
+                  <li><a class="dropdown-item" href="#">Accedi</a></li>
+                  <li><a class="dropdown-item" href="#">Registrati</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section
       class="slide d-flex justify-content-center align-items-center border-bottom"
       id="slide-1"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
+      <div class="container p-3 p-lg-3">
+        <div class="row d-flex justify-content-center align-items-centers">
+          <div class="col col-lg-3">
             <h1 class="mb-3">Sportype</h1>
             <p>
               Sportype è un servizio che permette ai suoi utenti di
@@ -110,7 +169,11 @@
             </p>
           </div>
           <div class="col-lg-1"></div>
-          <div class="col-lg-6 d-flex justify-content-center border"></div>
+          <div
+            class="col col-lg-8 d-flex justify-content-center border p-0 m-3 m-lg-0"
+          >
+            <img class="img-fluid" src="./assets/images/Untitled-11-01.png" />
+          </div>
         </div>
       </div>
     </section>
@@ -221,9 +284,9 @@
       </div>
     </section>
 
-    <footer class="p-3 border-top fixed-bottom bg-white">
-      <div class="container">
-        <!-- <div class="row">
+    <!-- <footer class="p-3 border-top fixed-bottom bg-white">
+      <div class="container"> -->
+    <!-- <div class="row">
           <div class="col">
             <a
               href="/"
@@ -302,7 +365,7 @@
           </div>
         </div> -->
 
-        <div class="d-flex justify-content-between">
+    <!-- <div class="d-flex justify-content-between">
           <div class="d-flex">
             <span class="">&copy; Sportype S.r.l.</span>
             <ul class="list-unstyled d-flex mb-lg-0">
@@ -332,7 +395,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Bootstrap Bundle with Popper -->
     <script
@@ -342,6 +405,6 @@
     ></script>
 
     <!-- Custom JavaScript-->
-    <script src="script.js"></script>
+    <script src="./src/script.js"></script>
   </body>
 </html>
