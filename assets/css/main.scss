@@ -1,0 +1,85 @@
+// Customised variables
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+);
+
+// $border-radius: 1rem;
+// $border-radius-sm: 1rem;
+// $border-radius-lg: 1rem;
+
+$display-font-weight: 500;
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Functions
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Custom CSS
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Sora", sans-serif;
+}
+
+footer {
+  font-size: 0.875rem;
+}
+
+.slide {
+  display: block;
+  height: relative;
+  width: 100%;
+  background-color: transparent;
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+  .slide {
+    display: block;
+    height: relative;
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+}
+
+@include media-breakpoint-up(xxl) {
+}
+
+.material-icons {
+  vertical-align: middle;
+  line-height: 0 !important;
+  position: relative;
+  top: -1px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
