@@ -13,10 +13,7 @@ $spacers: (
   9: $spacer * 9,
 );
 
-// $border-radius: 1rem;
-// $border-radius-sm: 1rem;
-// $border-radius-lg: 1rem;
-
+// Temp
 $display-font-weight: 500;
 
 // Bootstrap
@@ -25,14 +22,68 @@ $display-font-weight: 500;
 // Functions
 @import "../../node_modules/bootstrap/scss/functions";
 
-// Custom CSS
+// Google fonts
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 
+// Material icons
+.material-icons {
+  vertical-align: middle;
+  line-height: 0 !important;
+  position: relative;
+  top: -1px;
+}
+
+.material-icons.md-14 {
+  font-size: 14px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+// Custom CSS
 * {
   font-family: "Sora", sans-serif;
 }
 
+body {
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: #f1f1f1;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+
+  &:focus,
+  &:active,
+  &-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 footer {
+  font-size: 0.875rem;
+  background-color: #f1f1f1;
+}
+
+footer .dropdown-menu {
   font-size: 0.875rem;
 }
 
@@ -40,9 +91,10 @@ footer {
   display: block;
   height: relative;
   width: 100%;
-  background-color: transparent;
+  background-color: #f1f1f1;
 }
 
+// Media queries
 @include media-breakpoint-up(sm) {
 }
 
@@ -62,24 +114,4 @@ footer {
 }
 
 @include media-breakpoint-up(xxl) {
-}
-
-.material-icons {
-  vertical-align: middle;
-  line-height: 0 !important;
-  position: relative;
-  top: -1px;
-}
-
-.material-icons.md-18 {
-  font-size: 18px;
-}
-.material-icons.md-24 {
-  font-size: 24px;
-}
-.material-icons.md-36 {
-  font-size: 36px;
-}
-.material-icons.md-48 {
-  font-size: 48px;
 }
