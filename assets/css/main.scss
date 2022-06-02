@@ -78,6 +78,24 @@ header {
   }
 }
 
+.hero-video-container {
+  overflow: hidden;
+  border-radius: $spacer * 1.5;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  border-radius: $spacer * 1.5;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+  border-radius: $spacer * 1.5;
+  border: 1px solid #4d5eff;
+}
+
 footer {
   font-size: 0.875rem;
   background-color: #f1f1f1;
