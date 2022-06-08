@@ -13,8 +13,9 @@ $spacers: (
   9: $spacer * 9,
 );
 
-// Temp
 $display-font-weight: 500;
+$font-weight-normal: 500;
+$lead-font-weight: 500;
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -59,11 +60,23 @@ $display-font-weight: 500;
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
-header {
+.navbar-dark {
+  background-color: #475aff;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar-light {
   background-color: #f1f1f1;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar-shadow {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .navbar-toggler {
@@ -86,6 +99,7 @@ header {
 }
 
 .hero-image {
+  color: white;
   border-radius: $spacer * 1.5;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
     0 3px 5px -1px rgba(0, 0, 0, 0.2);
@@ -93,7 +107,7 @@ header {
 
 .hero-text {
   border-radius: $spacer * 1.5;
-  border: 1px solid #4d5eff;
+  border: 1px solid #475aff;
 }
 
 footer {
@@ -112,6 +126,16 @@ footer .dropdown-menu {
   background-color: #f1f1f1;
 }
 
+#slide-1 {
+  background-color: #475aff;
+  color: white;
+}
+
+.section-break {
+  box-shadow: 0 -24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 -9px 46px 8px rgba(0, 0, 0, 0.12), 0 -11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
 // Media queries
 @include media-breakpoint-up(sm) {
 }
@@ -120,11 +144,8 @@ footer .dropdown-menu {
 }
 
 @include media-breakpoint-up(lg) {
-  .slide {
-    display: block;
-    height: relative;
-    width: 100%;
-    background-color: transparent;
+  #slide-1 {
+    height: 100vh;
   }
 }
 

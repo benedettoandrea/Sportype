@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1,  maximum-scale=1, user-scalable=0"
     />
-    <meta name="theme-color" content="#f1f1f1" />
+    <meta name="theme-color" content="#475aff" />
 
     <!-- Title -->
     <title>Sportype – Home</title>
@@ -23,6 +23,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Material icons-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -31,102 +37,151 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="border-bottom sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a
-            class="navbar-brand"
-            href="https://benedettoandrea.github.io/Sportype/index.html"
-            >Sportype</a
-          >
-          <button
-            class="navbar-toggler collapsed p-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="material-icons md-36"> menu </span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://benedettoandrea.github.io/Sportype/chisiamo.html"
-                  >Chi siamo</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://benedettoandrea.github.io/Sportype/sportivi.html"
-                  >Cerchi uno sport?</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://benedettoandrea.github.io/Sportype/società.html"
-                  >Sei una società?</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="https://benedettoandrea.github.io/Sportype/index.html"
+          >Sportype</a
+        >
+        <button
+          class="navbar-toggler collapsed p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-icons md-36"> menu </span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://benedettoandrea.github.io/Sportype/chisiamo.html"
+                >Chi siamo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://benedettoandrea.github.io/Sportype/sportivi.html"
+                >Cerchi uno sport?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://benedettoandrea.github.io/Sportype/società.html"
+                >Sei una società?</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
               <input
-                class="form-control me-2"
                 type="search"
+                class="form-control rounded-end rounded-pill border-white"
                 placeholder="Cerca"
                 aria-label="Search"
+                aria-describedby="button-search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Cerca
+              <button
+                type="submit"
+                class="btn btn-light border-white bg-white rounded-start rounded-pill"
+                id="button-search"
+              >
+                <span class="material-icons md-24">search</span>
               </button>
-            </form>
-            <ul class="navbar-nav mt-3 mb-2 my-lg-0 ms-auto">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle p-0"
-                  href="#"
-                  id="navbar-dropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <span class="material-icons md-36">account_circle</span>
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbar-dropdown"
-                >
-                  <li><a class="dropdown-item" href="#">Accedi</a></li>
-                  <li><a class="dropdown-item" href="#">Registrati</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
+          </form>
+          <ul class="navbar-nav mt-3 mb-2 my-lg-0 ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle p-0"
+                href="#"
+                id="navbar-dropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="material-icons md-24">account_circle</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbar-dropdown"
+              >
+                <li><a class="dropdown-item" href="#">Accedi</a></li>
+                <li><a class="dropdown-item" href="#">Registrati</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-8"
+      class="slide d-flex justify-content-center align-items-center py-6 p-lg-0"
       id="slide-1"
     >
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-2 mb-4">Sportype</h1>
+          <div class="col-12 col-lg-6 pe-lg-4">
+            <h1 class="display-2 mb-4 mb-lg-5">
+              Un luogo di riferimento per sportivi e società sportive.
+            </h1>
             <p class="lead mb-4">
               Sportype è un servizio digitale che promuove un modello di sport
               inclusivo e senza barriere di genere.
             </p>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-6 ps-lg-4">
+            <img
+              class="img-fluid"
+              src="./assets/images/hero-welcome-image.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section-break slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
+      id="slide-2"
+    >
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-lg-4 mb-0">
+            <h1 class="display-2">Perché?</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
+      id="slide-3"
+    >
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-lg-4 pe-lg-6">
+            <!-- <h1 class="display-2 mb-4">Perché?</h1> -->
+            <h1 class="display-6 mb-4">
+              lo sport non è una questione di genere.
+            </h1>
+          </div>
+          <div class="col-lg-8 animate__animated animate__fadeInUp">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
           </div>
         </div>
@@ -134,35 +189,18 @@
     </section>
 
     <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-8"
+      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
       id="slide-4"
     >
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-2 mb-4">Perché?</h1>
-            <p class="lead mb-4">lo sport non è una questione di genere.</p>
-          </div>
-          <div class="col-lg-8">
-            <img class="hero-image img-fluid" src="./assets/images/temp.png" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-8"
-      id="slide-4"
-    >
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-2 mb-4">Perché?</h1>
-            <p class="lead mb-4">
+          <div class="col-12 col-lg-4 ps-lg-6 order-lg-2">
+            <!-- <h1 class="display-2 mb-4">Perché?</h1> -->
+            <h1 class="display-6 mb-4">
               Ognuno ha il diritto di fare ciò che davvero ama.
-            </p>
+            </h1>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8 order-lg-1">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
           </div>
         </div>
@@ -170,16 +208,16 @@
     </section>
 
     <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-8"
-      id="slide-4"
+      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
+      id="slide-5"
     >
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-2 mb-4">Perché?</h1>
-            <p class="lead mb-4">
+            <!-- <h1 class="display-2 mb-4">Perché?</h1> -->
+            <h1 class="display-6 mb-4">
               Crediamo nel valore ispirativo delle storie altrui.
-            </p>
+            </h1>
           </div>
           <div class="col-lg-8">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
@@ -189,7 +227,7 @@
     </section>
 
     <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-8"
+      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
       id="slide-5"
     >
       <div class="container">
@@ -206,25 +244,82 @@
     </section>
 
     <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-8"
+      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
       id="slide-6"
     >
       <div class="container">
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-center gx-lg-6">
           <div class="col-12 col-lg-6">
-            <div class="hero-text container mb-4 mb-lg-0 p-4">
-              <h1 class="h3 mb-4">Sei uno sportivo?</h1>
-              <p>
-                Scopri come ti guideremo nella ricerca dello sport che più ti
-                piace
-              </p>
+            <div
+              class="hero-image mb-4 mb-lg-0 p-4 p-lg-5"
+              style="
+                background-image: url('./assets/images/temp.png');
+                aspect-ratio: 4 / 3;
+              "
+            >
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <!-- Mobile -->
+                  <h3 class="d-lg-none">Sei uno sportivo?</h3>
+
+                  <!-- Desktop -->
+                  <h1 class="display-6 d-none d-lg-block">Sei uno sportivo?</h1>
+                </div>
+                <div>
+                  <!-- Mobile -->
+                  <p class="d-lg-none">
+                    Scopri come ti guideremo nella ricerca dello sport che più
+                    ti piace
+                  </p>
+                  <!-- Desktop -->
+                  <p class="lead mb-4 d-none d-lg-block">
+                    Scopri come ti guideremo nella ricerca dello sport che più
+                    ti piace
+                  </p>
+                  <a href="#link" class="btn btn-outline-light" role="button">
+                    <!-- Mobile -->
+                    <span class="d-lg-none">Scopri</span>
+                    <!-- Desktop -->
+                    <span class="lead d-none d-lg-block">Scopri</span></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-12 col-lg-6">
-            <div class="hero-text container p-4">
-              <h1 class="h3 mb-4">Sei una società?</h1>
-              <p>Scopri come ti aiuteremo a raggiungere più sportivi</p>
+            <div
+              class="hero-image mb-4 mb-lg-0 p-4 p-lg-5"
+              style="
+                background-image: url('./assets/images/temp.png');
+                aspect-ratio: 4 / 3;
+              "
+            >
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <!-- Mobile -->
+                  <h3 class="d-lg-none">Sei una società?</h3>
+
+                  <!-- Desktop -->
+                  <h1 class="display-6 d-none d-lg-block">Sei una società?</h1>
+                </div>
+                <div>
+                  <!-- Mobile -->
+                  <p class="d-lg-none">
+                    Scopri come ti aiuteremo a raggiungere più sportivi
+                  </p>
+                  <!-- Desktop -->
+                  <p class="lead d-none d-lg-block mb-4">
+                    Scopri come ti aiuteremo a raggiungere più sportivi
+                  </p>
+                  <a href="#link" class="btn btn-outline-light" role="button">
+                    <!-- Mobile -->
+                    <span class="d-lg-none">Scopri</span>
+                    <!-- Desktop -->
+                    <span class="lead d-none d-lg-block">Scopri</span></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -232,27 +327,73 @@
     </section>
 
     <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-8"
+      class="slide d-flex justify-content-center align-items-center py-6 py-lg-9"
       id="slide-7"
     >
       <div class="container">
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-center gx-lg-6">
           <div class="col-12 col-lg-6">
-            <div class="hero-text container mb-4 mb-lg-0 p-4">
-              <h1 class="h3 mb-4">Accedi o registrati</h1>
+            <div class="hero-text container mb-4 mb-lg-0 p-4 p-lg-5">
+              <!-- Mobile -->
+              <h3 class="mb-4 d-lg-none">Accedi o registrati</h3>
+
+              <!-- Desktop -->
+              <h1 class="mb-5 display-6 d-none d-lg-block">
+                Accedi o registrati
+              </h1>
+
+              <a
+                href="#link"
+                class="btn btn-outline-dark me-2 me-lg-4"
+                role="button"
+              >
+                <!-- Mobile -->
+                <span class="d-lg-none">Accedi</span>
+                <!-- Desktop -->
+                <span class="lead d-none d-lg-block">Accedi</span></a
+              >
+
+              <a href="#link" class="btn btn-outline-dark" role="button">
+                <!-- Mobile -->
+                <span class="d-lg-none">Registrati</span>
+                <!-- Desktop -->
+                <span class="lead d-none d-lg-block">Registrati</span></a
+              >
             </div>
           </div>
 
           <div class="col-12 col-lg-6">
-            <div class="hero-text container p-4">
-              <h1 class="h3 mb-4">Scarica la app!</h1>
+            <div class="hero-text container mb-0 p-4 p-lg-5">
+              <!-- Mobile -->
+              <h3 class="mb-4 d-lg-none">Scarica la app</h3>
+
+              <!-- Desktop -->
+              <h1 class="display-6 mb-5 d-none d-lg-block">Scarica la app</h1>
+
+              <a
+                href="#link"
+                class="btn btn-outline-dark me-2 me-lg-4"
+                role="button"
+              >
+                <!-- Mobile -->
+                <span class="d-lg-none">App Store</span>
+                <!-- Desktop -->
+                <span class="lead d-none d-lg-block">App Store</span></a
+              >
+
+              <a href="#link" class="btn btn-outline-dark" role="button">
+                <!-- Mobile -->
+                <span class="d-lg-none">Play Store</span>
+                <!-- Desktop -->
+                <span class="lead d-none d-lg-block">Play Store</span></a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="border-top mt-6 mt-lg-8 py-4">
+    <footer class="border-top mt-0 py-4 py-lg-5">
       <div class="container mb-4">
         <div class="row">
           <div class="col-6 col-lg-2 mt-0">
@@ -380,61 +521,6 @@
         </div>
       </div>
 
-      <!-- Desktop -->
-      <div class="container d-none d-lg-block">
-        <div class="d-flex d-flex justify-content-between border-top pt-4">
-          <div class="d-flex">
-            <span class="">Sportype &copy; 2022</span>
-            <ul class="list-unstyled d-flex mb-lg-0">
-              <li class="nav-item ms-3">
-                <a class="nav-link text-muted p-0" href="#">Privacy</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link text-muted p-0" href="#">Termini</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link text-muted p-0" href="#"
-                  >Impostazioni cookie</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex">
-            <ul class="list-unstyled d-flex mb-lg-0">
-              <li class="nav-item ms-3">
-                <div class="dropdown">
-                  <a
-                    href="#"
-                    class="d-block dropdown-toggle link-dark text-decoration-none"
-                    id="dropdown-language-1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span class="material-icons md-14">language</span>
-                  </a>
-                  <ul
-                    class="dropdown-menu text-small"
-                    aria-labelledby="dropdown-language-1"
-                  >
-                    <li><a class="dropdown-item" href="#">English (UK)</a></li>
-                    <li><a class="dropdown-item" href="#">Italiano (IT)</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link text-muted p-0" href="#">Behance</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link text-muted p-0" href="#">Facebook</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link text-muted p-0" href="#">Instagram</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <!-- Mobile -->
       <div class="container d-lg-none">
         <div class="container d-flex border-top"></div>
@@ -501,6 +587,61 @@
           </div>
         </div>
       </div>
+
+      <!-- Desktop -->
+      <div class="container d-none d-lg-block">
+        <div class="d-flex d-flex justify-content-between border-top pt-4">
+          <div class="d-flex">
+            <span class="">Sportype &copy; 2022</span>
+            <ul class="list-unstyled d-flex mb-lg-0">
+              <li class="nav-item ms-3">
+                <a class="nav-link text-muted p-0" href="#">Privacy</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-muted p-0" href="#">Termini</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-muted p-0" href="#"
+                  >Impostazioni cookie</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <ul class="list-unstyled d-flex mb-lg-0">
+              <li class="nav-item ms-3">
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="d-block dropdown-toggle link-dark text-decoration-none"
+                    id="dropdown-language-1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="material-icons md-14">language</span>
+                  </a>
+                  <ul
+                    class="dropdown-menu text-small"
+                    aria-labelledby="dropdown-language-1"
+                  >
+                    <li><a class="dropdown-item" href="#">English (UK)</a></li>
+                    <li><a class="dropdown-item" href="#">Italiano (IT)</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-muted p-0" href="#">Behance</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-muted p-0" href="#">Facebook</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-muted p-0" href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
@@ -511,6 +652,6 @@
     ></script>
 
     <!-- Custom JavaScript-->
-    <script src="./assets/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
