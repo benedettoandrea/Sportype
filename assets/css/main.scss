@@ -1,4 +1,5 @@
 // Customised variables
+// Spacers
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -13,9 +14,14 @@ $spacers: (
   9: $spacer * 9,
 );
 
-$display-font-weight: 500;
+// Typography
 $font-weight-normal: 500;
 $lead-font-weight: 500;
+$display-font-weight: 500;
+
+// Dropdowns
+$dropdown-border-width: 0px;
+// $dropdown-border-radius: $border-radius;
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -54,11 +60,252 @@ $lead-font-weight: 500;
   font-size: 48px;
 }
 
+// Shadows based on the Material Design elevation system
+// https://github.com/material-components/material-components-web/blob/master/packages/mdc-elevation/_elevation-theme.scss
+// https://material-components.github.io/material-components-web-catalog/#/component/elevation
+//
+// Copyright and permission notice:
+//
+// Copyright 2017 Google Inc.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+@mixin mdc-elevation--z0 {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z1 {
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z2 {
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z3 {
+  -webkit-box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z4 {
+  -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z5 {
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z6 {
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z7 {
+  -webkit-box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),
+    0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),
+    0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z8 {
+  -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z9 {
+  -webkit-box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2),
+    0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2),
+    0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z10 {
+  -webkit-box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),
+    0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),
+    0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z11 {
+  -webkit-box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2),
+    0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2),
+    0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z12 {
+  -webkit-box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z13 {
+  -webkit-box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z14 {
+  -webkit-box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2),
+    0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2),
+    0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z15 {
+  -webkit-box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2),
+    0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2),
+    0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z16 {
+  -webkit-box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z17 {
+  -webkit-box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2),
+    0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2),
+    0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z18 {
+  -webkit-box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2),
+    0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2),
+    0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z19 {
+  -webkit-box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2),
+    0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2),
+    0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z20 {
+  -webkit-box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z21 {
+  -webkit-box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z22 {
+  -webkit-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2),
+    0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2),
+    0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z23 {
+  -webkit-box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2),
+    0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2),
+    0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mdc-elevation--z24 {
+  -webkit-box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+
 // Custom CSS
+// Components
 * {
   font-family: "Sora", sans-serif;
 }
 
+// General rule
+.dropdown .dropdown-menu {
+  @include mdc-elevation--z8;
+}
+
+// Execption for this component for mobile devices. The general rule is reapplied for bigger screens
+#dropdown-menu-account {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.slide {
+  display: block;
+  height: relative;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.hero-text {
+  border: 1px solid #475aff;
+  border-radius: $spacer * 1.5;
+}
+
+.hero-image {
+  @include mdc-elevation--z6;
+  color: white;
+  border-radius: $spacer * 1.5;
+}
+
+.hero-video-container {
+  @include mdc-elevation--z6;
+  overflow: hidden;
+  border-radius: $spacer * 1.5;
+}
+
+.section-break {
+  @include mdc-elevation--z24;
+}
+
+// Page specific styling
 body {
   background-color: #ffffff;
 }
@@ -74,15 +321,13 @@ body {
 }
 
 .navbar-shadow {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  @include mdc-elevation--z1;
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .navbar-toggler {
   border: none;
   outline: none;
-
   &:focus,
   &:active,
   &-icon:focus {
@@ -91,23 +336,9 @@ body {
   }
 }
 
-.hero-video-container {
-  overflow: hidden;
-  border-radius: $spacer * 1.5;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
-    0 3px 5px -1px rgba(0, 0, 0, 0.2);
-}
-
-.hero-image {
+#slide-1 {
+  background-color: #475aff;
   color: white;
-  border-radius: $spacer * 1.5;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
-    0 3px 5px -1px rgba(0, 0, 0, 0.2);
-}
-
-.hero-text {
-  border-radius: $spacer * 1.5;
-  border: 1px solid #475aff;
 }
 
 footer {
@@ -119,23 +350,6 @@ footer .dropdown-menu {
   font-size: 0.875rem;
 }
 
-.slide {
-  display: block;
-  height: relative;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-#slide-1 {
-  background-color: #475aff;
-  color: white;
-}
-
-.section-break {
-  box-shadow: 0 -24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 -9px 46px 8px rgba(0, 0, 0, 0.12), 0 -11px 15px -7px rgba(0, 0, 0, 0.2);
-}
-
 // Media queries
 @include media-breakpoint-up(sm) {
 }
@@ -144,6 +358,10 @@ footer .dropdown-menu {
 }
 
 @include media-breakpoint-up(lg) {
+  #dropdown-menu-account {
+    // necessary for showing it in bigger screens
+    @include mdc-elevation--z8;
+  }
   #slide-1 {
     height: 100vh;
   }

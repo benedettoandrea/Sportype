@@ -10,7 +10,9 @@
     <meta name="theme-color" content="#475aff" />
 
     <!-- Title -->
-    <title>Sportype – Home</title>
+    <title>
+      Un luogo di riferimento per sportivi e società sportive – Sportype
+    </title>
 
     <!-- Favicon -->
     <link rel="icon" href="" />
@@ -62,7 +64,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="material-icons md-36"> menu </span>
+          <span class="material-icons md-36">menu</span>
         </button>
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
@@ -91,16 +93,16 @@
           <form class="d-flex">
             <div class="input-group">
               <input
+                class="form-control bg-white border-white rounded-end rounded-pill"
                 type="search"
-                class="form-control rounded-end rounded-pill border-white"
                 placeholder="Cerca"
                 aria-label="Search"
                 aria-describedby="button-search"
               />
               <button
-                type="submit"
-                class="btn btn-light border-white bg-white rounded-start rounded-pill"
+                class="btn btn-light bg-white border-white rounded-start rounded-pill"
                 id="button-search"
+                type="submit"
               >
                 <span class="material-icons md-24">search</span>
               </button>
@@ -109,9 +111,9 @@
           <ul class="navbar-nav mt-3 mb-2 my-lg-0 ms-auto">
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle p-0"
-                href="#"
+                class="btn btn-light bg-white border-white rounded-pill dropdown-toggle"
                 id="navbar-dropdown"
+                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -120,6 +122,7 @@
               </a>
               <ul
                 class="dropdown-menu dropdown-menu-end"
+                id="dropdown-menu-account"
                 aria-labelledby="navbar-dropdown"
               >
                 <li><a class="dropdown-item" href="#">Accedi</a></li>
@@ -141,12 +144,12 @@
             <h1 class="display-2 mb-4 mb-lg-5">
               Un luogo di riferimento per sportivi e società sportive.
             </h1>
-            <p class="lead mb-4">
+            <p class="lead mb-4 mb-lg-0">
               Sportype è un servizio digitale che promuove un modello di sport
               inclusivo e senza barriere di genere.
             </p>
           </div>
-          <div class="col-lg-6 ps-lg-4">
+          <div class="col-12 col-lg-6 ps-lg-4">
             <img
               class="img-fluid"
               src="./assets/images/hero-welcome-image.svg"
@@ -157,13 +160,13 @@
     </section>
 
     <section
-      class="section-break slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
+      class="slide section-break d-flex justify-content-center align-items-center pt-6 pt-lg-9"
       id="slide-2"
     >
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-4 mb-0">
-            <h1 class="display-2">Perché?</h1>
+          <div class="col">
+            <h1 class="display-2 mb-0">Perché?</h1>
           </div>
         </div>
       </div>
@@ -176,12 +179,11 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <!-- <h1 class="display-2 mb-4">Perché?</h1> -->
-            <h1 class="display-6 mb-4">
+            <h1 class="display-6 mb-4 mb-lg-0">
               lo sport non è una questione di genere.
             </h1>
           </div>
-          <div class="col-lg-8">
+          <div class="col-12 col-lg-8">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
           </div>
         </div>
@@ -195,12 +197,11 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 ps-lg-6 order-lg-2">
-            <!-- <h1 class="display-2 mb-4">Perché?</h1> -->
-            <h1 class="display-6 mb-4">
+            <h1 class="display-6 mb-4 mb-lg-0">
               Ognuno ha il diritto di fare ciò che davvero ama.
             </h1>
           </div>
-          <div class="col-lg-8 order-lg-1">
+          <div class="col-12 col-lg-8 order-lg-1">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
           </div>
         </div>
@@ -214,30 +215,12 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <!-- <h1 class="display-2 mb-4">Perché?</h1> -->
-            <h1 class="display-6 mb-4">
+            <h1 class="display-6 mb-4 mb-lg-0">
               Crediamo nel valore ispirativo delle storie altrui.
             </h1>
           </div>
-          <div class="col-lg-8">
+          <div class="col-12 col-lg-8">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
-      id="slide-5"
-    >
-      <div class="container">
-        <div class="hero-video-container">
-          <div class="hero-video ratio ratio-16x9">
-            <video controls>
-              <source src="movie.mp4" type="video/mp4" />
-              <source src="movie.ogg" type="video/ogg" />
-              Your browser does not support the video tag.
-            </video>
           </div>
         </div>
       </div>
@@ -248,7 +231,23 @@
       id="slide-6"
     >
       <div class="container">
-        <div class="row d-flex align-items-center gx-lg-6">
+        <div class="hero-video-container">
+          <div class="hero-video ratio ratio-16x9">
+            <video controls>
+              <source src="movie.mp4" type="video/mp4" />
+              Il tuo browser non supporta il tag video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
+      id="slide-7"
+    >
+      <div class="container">
+        <div class="row d-flex align-items-top gx-lg-6">
           <div class="col-12 col-lg-6">
             <div
               class="hero-image mb-4 mb-lg-0 p-4 p-lg-5"
@@ -269,14 +268,19 @@
                   <!-- Mobile -->
                   <p class="d-lg-none">
                     Scopri come ti guideremo nella ricerca dello sport che più
-                    ti piace
+                    ti piace.
                   </p>
                   <!-- Desktop -->
                   <p class="lead mb-4 d-none d-lg-block">
                     Scopri come ti guideremo nella ricerca dello sport che più
-                    ti piace
+                    ti piace.
                   </p>
-                  <a href="#link" class="btn btn-outline-light" role="button">
+
+                  <a
+                    href="https://benedettoandrea.github.io/Sportype/sportivi.html"
+                    class="btn btn-outline-light"
+                    role="button"
+                  >
                     <!-- Mobile -->
                     <span class="d-lg-none">Scopri</span>
                     <!-- Desktop -->
@@ -306,13 +310,18 @@
                 <div>
                   <!-- Mobile -->
                   <p class="d-lg-none">
-                    Scopri come ti aiuteremo a raggiungere più sportivi
+                    Scopri come ti aiuteremo a raggiungere più sportivi.
                   </p>
                   <!-- Desktop -->
                   <p class="lead d-none d-lg-block mb-4">
-                    Scopri come ti aiuteremo a raggiungere più sportivi
+                    Scopri come ti aiuteremo a raggiungere più sportivi.
                   </p>
-                  <a href="#link" class="btn btn-outline-light" role="button">
+
+                  <a
+                    href="https://benedettoandrea.github.io/Sportype/società.html"
+                    class="btn btn-outline-light"
+                    role="button"
+                  >
                     <!-- Mobile -->
                     <span class="d-lg-none">Scopri</span>
                     <!-- Desktop -->
@@ -328,10 +337,10 @@
 
     <section
       class="slide d-flex justify-content-center align-items-center py-6 py-lg-9"
-      id="slide-7"
+      id="slide-8"
     >
       <div class="container">
-        <div class="row d-flex align-items-center gx-lg-6">
+        <div class="row d-flex align-items-top gx-lg-6">
           <div class="col-12 col-lg-6">
             <div class="hero-text container mb-4 mb-lg-0 p-4 p-lg-5">
               <!-- Mobile -->
@@ -380,7 +389,6 @@
                 <!-- Desktop -->
                 <span class="lead d-none d-lg-block">App Store</span></a
               >
-
               <a href="#link" class="btn btn-outline-dark" role="button">
                 <!-- Mobile -->
                 <span class="d-lg-none">Play Store</span>
@@ -394,9 +402,9 @@
     </section>
 
     <footer class="border-top mt-0 py-4 py-lg-5">
-      <div class="container mb-4">
+      <div class="container mb-4 mb-lg-5">
         <div class="row">
-          <div class="col-6 col-lg-2 mt-0">
+          <div class="col-6 col-lg-2">
             <a
               href="/"
               class="d-flex align-items-center link-dark text-decoration-none mb-3"
@@ -415,7 +423,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-lg-2 mt-0">
+          <div class="col-6 col-lg-2">
             <h6>Pagine</h6>
             <ul class="nav flex-column">
               <li class="nav-item mb-0">
@@ -451,13 +459,13 @@
 
           <div class="col-6 col-lg-2 mt-4 mt-lg-0">
             <h6>Contatti</h6>
-            <p class="text-muted mb-0 p-0">
+            <p class="text-muted p-0 mb-0">
               Via Giuseppe Candiani, 72<br />
               20158 Milano
             </p>
             <ul class="nav flex-column">
               <li class="nav-item mb-0">
-                <a href="tel:+3906xxxxxxxx" class="nav-link text-muted p-0"
+                <a href="tel:+390255555555" class="nav-link text-muted p-0"
                   >+39 02 55555555</a
                 >
               </li>
@@ -473,7 +481,7 @@
 
           <div class="col-6 col-lg-2 mt-4 mt-lg-0">
             <h6>Info</h6>
-            <p class="text-muted mb-0 p-0">
+            <p class="text-muted p-0 mb-0">
               Politecnico di Milano<br />
               A.A. 2021–2022<br />
               LM in Design della Comunicazione<br />
@@ -483,7 +491,7 @@
 
           <div class="col-6 col-lg-2 mt-4 mt-lg-0">
             <h6>Docenza</h6>
-            <p class="text-muted mb-0 p-0">
+            <p class="text-muted p-0 mb-0">
               Roberta Tassi<br />
               Maristella Matera<br />
               Guido Parlato<br />
@@ -506,7 +514,9 @@
                 >
               </li>
               <li class="nav-item mb-0">
-                <a href="#" class="nav-link text-muted p-0"
+                <a
+                  href="https://www.instagram.com/manifestimolesti/"
+                  class="nav-link text-muted p-0"
                   >Giovanni Benvegnù</a
                 >
               </li>
@@ -546,9 +556,7 @@
             </ul>
           </div>
         </div>
-
         <div class="container d-flex border-top"></div>
-
         <div class="row pt-4">
           <div class="col-6">
             <ul class="nav flex-column">
@@ -556,7 +564,7 @@
                 <a
                   href="#"
                   class="d-block dropdown-toggle link-dark text-decoration-none"
-                  id="dropdownUser1"
+                  id="dropdown-language-mobile"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -564,7 +572,7 @@
                 </a>
                 <ul
                   class="dropdown-menu text-small"
-                  aria-labelledby="dropdownUser1"
+                  aria-labelledby="dropdown-language-mobile"
                 >
                   <li><a class="dropdown-item" href="#">English (UK)</a></li>
                   <li><a class="dropdown-item" href="#">Italiano (IT)</a></li>
@@ -590,7 +598,7 @@
 
       <!-- Desktop -->
       <div class="container d-none d-lg-block">
-        <div class="d-flex d-flex justify-content-between border-top pt-4">
+        <div class="d-flex d-flex justify-content-between border-top pt-5">
           <div class="d-flex">
             <span class="">Sportype &copy; 2022</span>
             <ul class="list-unstyled d-flex mb-lg-0">
@@ -614,7 +622,7 @@
                   <a
                     href="#"
                     class="d-block dropdown-toggle link-dark text-decoration-none"
-                    id="dropdown-language-1"
+                    id="dropdown-language-desktop"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
@@ -622,7 +630,7 @@
                   </a>
                   <ul
                     class="dropdown-menu text-small"
-                    aria-labelledby="dropdown-language-1"
+                    aria-labelledby="dropdown-language-desktop"
                   >
                     <li><a class="dropdown-item" href="#">English (UK)</a></li>
                     <li><a class="dropdown-item" href="#">Italiano (IT)</a></li>
