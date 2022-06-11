@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1,  maximum-scale=1, user-scalable=0"
     />
-    <meta name="theme-color" content="#475aff" />
+    <meta name="theme-color" content="#bbc2ff" />
 
     <!-- Title -->
     <title>
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bgcolored">
       <div class="container">
         <a
           class="navbar-brand"
@@ -46,22 +46,15 @@
           class="navbar-toggler collapsed p-0"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbar-supported-content"
+          aria-controls="navbar-supported-content"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="material-icons md-36">menu</span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse collapse" id="navbar-supported-content">
           <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://benedettoandrea.github.io/Sportype/chisiamo.html"
-                >Chi siamo</a
-              >
-            </li>
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -74,6 +67,13 @@
                 class="nav-link"
                 href="https://benedettoandrea.github.io/Sportype/società.html"
                 >Sei una società?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="https://benedettoandrea.github.io/Sportype/chisiamo.html"
+                >Chi siamo</a
               >
             </li>
           </ul>
@@ -123,7 +123,7 @@
 
     <section
       class="slide d-flex justify-content-center align-items-center py-6 p-lg-0"
-      id="slide-1"
+      id="subpage-slide-1"
     >
       <div class="container">
         <div class="row d-flex align-items-center">
@@ -138,7 +138,7 @@
           <div class="col-12 col-lg-6 ps-lg-4">
             <img
               class="img-fluid"
-              src="./assets/images/hero-welcome-image.svg"
+              src="./assets/images/sportivi-hero-slide-1.svg"
             />
           </div>
         </div>
@@ -151,24 +151,19 @@
     >
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col">
-            <h1 class="display-2 mb-0">Come?</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
-      id="slide-3"
-    >
-      <div class="container">
-        <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-6 mb-4 mb-lg-0">
-              Attraverso uno spazio ricco di storie da cui poter trarre forza e
-              ispirazione.
-            </h1>
+            <h1 class="display-6 mb-4 mb-lg-4">Ispirati</h1>
+            <!-- Mobile -->
+            <p class="mb-4 d-lg-none">
+              Fatti trasportare dalle storie di migliaia di sportivi,
+              interviste, video e fotografie curate dal nostro team.
+            </p>
+
+            <!-- Desktop -->
+            <p class="lead mb-4 d-none d-lg-block">
+              Fatti trasportare dalle storie di migliaia di sportivi,
+              interviste, video e fotografie curate dal nostro team.
+            </p>
           </div>
           <div class="col-12 col-lg-8">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
@@ -184,10 +179,18 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 ps-lg-6 order-lg-2">
-            <h1 class="display-6 mb-4 mb-lg-0">
-              Supportandoti nella ricerca del corso che più rispecchia le tue
-              esigenze.
-            </h1>
+            <h1 class="display-6 mb-4 mb-lg-4">Cerca</h1>
+            <!-- Mobile -->
+            <p class="mb-4 d-lg-none">
+              I filtri di ricerca ti permetteranno di trovare ciò che rispecchia
+              esattamente le tue esigenze.
+            </p>
+
+            <!-- Desktop -->
+            <p class="lead mb-4 d-none d-lg-block">
+              I filtri di ricerca ti permetteranno di trovare ciò che rispecchia
+              esattamente le tue esigenze.
+            </p>
           </div>
           <div class="col-12 col-lg-8 order-lg-1">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
@@ -203,10 +206,20 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-6 mb-4 mb-lg-0">
-              Aggiornandoti sui corsi che potrebbero interessarti. E se non c'è
-              ancora quello che cerchi? Proponilo te!
-            </h1>
+            <h1 class="display-6 mb-4 mb-lg-4">Proponi</h1>
+            <!-- Mobile -->
+            <p class="mb-4 d-lg-none">
+              E se non ci fosse ancora quello che cerchi? Proponilo te alle
+              società a te più vicine e raccogli l'interesse da parte di altri
+              sportivi.
+            </p>
+
+            <!-- Desktop -->
+            <p class="lead mb-4 d-none d-lg-block">
+              E se non ci fosse ancora quello che cerchi? Proponilo te alle
+              società a te più vicine e raccogli l'interesse da parte di altri
+              sportivi.
+            </p>
           </div>
           <div class="col-12 col-lg-8">
             <img class="hero-image img-fluid" src="./assets/images/temp.png" />
@@ -217,64 +230,83 @@
 
     <section
       class="slide d-flex justify-content-center align-items-center py-6 py-lg-9"
-      id="slide-6"
+      id="subpage-slide-8"
     >
       <div class="container">
         <div class="row d-flex align-items-top gx-lg-6">
           <div class="col-12 col-lg-6">
-            <div class="hero-text container mb-4 mb-lg-0 p-4 p-lg-5">
-              <!-- Mobile -->
-              <h3 class="mb-4 d-lg-none">Accedi o registrati</h3>
-
-              <!-- Desktop -->
-              <h1 class="mb-5 display-6 d-none d-lg-block">
-                Accedi o registrati
-              </h1>
-
-              <a
-                href="#link"
-                class="btn btn-outline-dark me-2 me-lg-4"
-                role="button"
-              >
+            <div
+              class="hero-image container mb-4 mb-lg-0 p-4 p-lg-5"
+              style="
+                background-image: url('./assets/images/home-hero-slide-8-accediregistrati.svg');
+                aspect-ratio: 2 / 1;
+              "
+            >
+              <div class="d-flex flex-column justify-content-between h-100">
                 <!-- Mobile -->
-                <span class="d-lg-none">Accedi</span>
-                <!-- Desktop -->
-                <span class="lead d-none d-lg-block">Accedi</span></a
-              >
+                <h3 class="mb-4 d-lg-none">Accedi o registrati</h3>
 
-              <a href="#link" class="btn btn-outline-dark" role="button">
-                <!-- Mobile -->
-                <span class="d-lg-none">Registrati</span>
                 <!-- Desktop -->
-                <span class="lead d-none d-lg-block">Registrati</span></a
-              >
+                <h1 class="mb-5 display-6 d-none d-lg-block">
+                  Accedi o registrati
+                </h1>
+
+                <div class="d-flex flex-row">
+                  <a
+                    href="#link"
+                    class="btn btn-outline-light me-2 me-lg-4"
+                    role="button"
+                  >
+                    <!-- Mobile -->
+                    <span class="d-lg-none">Accedi</span>
+                    <!-- Desktop -->
+                    <span class="lead d-none d-lg-block">Accedi</span></a
+                  >
+                  <a href="#link" class="btn btn-outline-light" role="button">
+                    <!-- Mobile -->
+                    <span class="d-lg-none">Registrati</span>
+                    <!-- Desktop -->
+                    <span class="lead d-none d-lg-block">Registrati</span></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-12 col-lg-6">
-            <div class="hero-text container mb-0 p-4 p-lg-5">
-              <!-- Mobile -->
-              <h3 class="mb-4 d-lg-none">Scarica la app</h3>
-
-              <!-- Desktop -->
-              <h1 class="display-6 mb-5 d-none d-lg-block">Scarica la app</h1>
-
-              <a
-                href="#link"
-                class="btn btn-outline-dark me-2 me-lg-4"
-                role="button"
-              >
+            <div
+              class="hero-image container mb-0 p-4 p-lg-5"
+              style="
+                background-image: url('./assets/images/home-hero-slide-8-scarica.svg');
+                aspect-ratio: 2 / 1;
+              "
+            >
+              <div class="d-flex flex-column justify-content-between h-100">
                 <!-- Mobile -->
-                <span class="d-lg-none">App Store</span>
+                <h3 class="mb-4 d-lg-none">Scarica la app</h3>
+
                 <!-- Desktop -->
-                <span class="lead d-none d-lg-block">App Store</span></a
-              >
-              <a href="#link" class="btn btn-outline-dark" role="button">
-                <!-- Mobile -->
-                <span class="d-lg-none">Play Store</span>
-                <!-- Desktop -->
-                <span class="lead d-none d-lg-block">Play Store</span></a
-              >
+                <h1 class="display-6 mb-5 d-none d-lg-block">Scarica la app</h1>
+
+                <div class="d-flex flex-row">
+                  <a
+                    href="#"
+                    class="btn btn-outline-light me-2 me-lg-4"
+                    role="button"
+                  >
+                    <!-- Mobile -->
+                    <span class="d-lg-none">App Store</span>
+                    <!-- Desktop -->
+                    <span class="lead d-none d-lg-block">App Store</span></a
+                  >
+                  <a href="#" class="btn btn-outline-light" role="button">
+                    <!-- Mobile -->
+                    <span class="d-lg-none">Play Store</span>
+                    <!-- Desktop -->
+                    <span class="lead d-none d-lg-block">Play Store</span></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -315,13 +347,6 @@
               </li>
               <li class="nav-item mb-0">
                 <a
-                  href="https://benedettoandrea.github.io/Sportype/chisiamo.html"
-                  class="nav-link text-muted p-0"
-                  >Chi siamo</a
-                >
-              </li>
-              <li class="nav-item mb-0">
-                <a
                   href="https://benedettoandrea.github.io/Sportype/sportivi.html"
                   class="nav-link text-muted p-0"
                   >Cerchi uno sport?</a
@@ -332,6 +357,13 @@
                   href="https://benedettoandrea.github.io/Sportype/società.html"
                   class="nav-link text-muted p-0"
                   >Sei una società?</a
+                >
+              </li>
+              <li class="nav-item mb-0">
+                <a
+                  href="https://benedettoandrea.github.io/Sportype/chisiamo.html"
+                  class="nav-link text-muted p-0"
+                  >Chi siamo</a
                 >
               </li>
             </ul>

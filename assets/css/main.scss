@@ -21,7 +21,6 @@ $display-font-weight: 500;
 
 // Dropdowns
 $dropdown-border-width: 0px;
-// $dropdown-border-radius: $border-radius;
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -285,7 +284,7 @@ $dropdown-border-width: 0px;
 }
 
 .hero-text {
-  border: 1px solid #475aff;
+  border: 1px solid #7885ff;
   border-radius: $spacer * 1.5;
 }
 
@@ -311,13 +310,20 @@ body {
 }
 
 .navbar-dark {
-  background-color: #475aff;
+  background-color: #7885ff;
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .navbar-light {
-  background-color: #f1f1f1;
   transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar-light.bgcolored {
+  background-color: #bbc2ff;
+}
+
+.navbar-light.bgneutral {
+  background-color: #f1f1f1;
 }
 
 .navbar-shadow {
@@ -336,9 +342,30 @@ body {
   }
 }
 
-#slide-1 {
-  background-color: #475aff;
+#home-slide-1 {
+  background-color: #7885ff;
   color: white;
+}
+
+#subpage-slide-1 {
+  background-color: #bbc2ff;
+}
+
+#società-pdf,
+#chisiamo-team,
+#chisiamo-pdf {
+  aspect-ratio: 3 / 4;
+}
+
+#società-pdf {
+  background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
+}
+
+#chisiamo-team {
+  background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
+}
+#chisiamo-pdf {
+  background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
 }
 
 footer {
@@ -362,8 +389,18 @@ footer .dropdown-menu {
     // necessary for showing it in bigger screens
     @include mdc-elevation--z8;
   }
-  #slide-1 {
+  #home-slide-1,
+  #subpage-slide-1 {
     height: 100vh;
+  }
+  #società-pdf {
+    background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
+    aspect-ratio: 16 / 9;
+  }
+  #chisiamo-team,
+  #chisiamo-pdf {
+    background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
+    aspect-ratio: 4 / 3;
   }
 }
 
