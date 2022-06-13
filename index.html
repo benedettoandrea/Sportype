@@ -25,6 +25,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Material icons-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -33,13 +36,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
-
-    <!-- jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
@@ -173,15 +169,29 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-6 mb-4 mb-lg-0">
+            <h1 class="display-6 mb-4 mb-lg-0" id="home-slide-3-headline">
               Lo sport non è una questione di genere.
             </h1>
           </div>
-          <div class="col-12 col-lg-8">
-            <img
-              class="hero-image img-fluid"
-              src="./assets/images/home-hero-slide-3.svg"
-            />
+          <div
+            class="col-12 col-lg-8"
+            data-aos="fade-left"
+            data-aos-offset="0"
+            data-aos-delay="0"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="true"
+            data-aos-anchor="#home-slide-3-headline"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div
+              class="hero hero-image mb-4 mb-lg-0"
+              style="
+                background-image: url('./assets/images/home-hero-slide-3.svg');
+                aspect-ratio: 4 / 3;
+              "
+            ></div>
           </div>
         </div>
       </div>
@@ -194,15 +204,29 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 ps-lg-6 order-lg-2">
-            <h1 class="display-6 mb-4 mb-lg-0">
+            <h1 class="display-6 mb-4 mb-lg-0" id="home-slide-4-headline">
               Ognuno ha il diritto di fare ciò che davvero ama.
             </h1>
           </div>
-          <div class="col-12 col-lg-8 order-lg-1">
-            <img
-              class="hero-image img-fluid"
-              src="./assets/images/home-hero-slide-4.svg"
-            />
+          <div
+            class="col-12 col-lg-8 order-lg-1"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-delay="0"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="true"
+            data-aos-anchor="#home-slide-4-headline"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div
+              class="hero hero-image mb-4 mb-lg-0"
+              style="
+                background-image: url('./assets/images/home-hero-slide-4.svg');
+                aspect-ratio: 4 / 3;
+              "
+            ></div>
           </div>
         </div>
       </div>
@@ -215,15 +239,29 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-6 mb-4 mb-lg-0">
+            <h1 class="display-6 mb-4 mb-lg-0" id="home-slide-5-headline">
               Crediamo nel valore ispirativo delle storie altrui.
             </h1>
           </div>
-          <div class="col-12 col-lg-8">
-            <img
-              class="hero-image img-fluid"
-              src="./assets/images/home-hero-slide-5.svg"
-            />
+          <div
+            class="col-12 col-lg-8"
+            data-aos="fade-left"
+            data-aos-offset="0"
+            data-aos-delay="0"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="true"
+            data-aos-anchor="#home-slide-5-headline"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div
+              class="hero hero-image mb-4 mb-lg-0"
+              style="
+                background-image: url('./assets/images/home-hero-slide-5.svg');
+                aspect-ratio: 4 / 3;
+              "
+            ></div>
           </div>
         </div>
       </div>
@@ -234,16 +272,55 @@
       id="home-slide-6"
     >
       <div class="container">
-        <div class="hero-video-container">
-          <div class="hero-video ratio ratio-16x9">
-            <video controls>
-              <source src="movie.mp4" type="video/mp4" />
+        <div class="hero hero-video-main">
+          <div class="ratio ratio-16x9">
+            <video autoplay loop muted>
+              <source
+                src="./assets/videos/sportivi-hero-slide-3.webm"
+                type="video/webm"
+              />
               Il tuo browser non supporta il tag video.
             </video>
+            <a
+              href="#exampleModalCenter"
+              class="hero hero-video-main-overlay btn btn-lg btn-dark d-flex justify-content-center align-items-center"
+              role="button"
+              aria-pressed="true"
+              data-bs-toggle="modal"
+            >
+              <div class=" ">
+                <span class="material-icons md-48">play_circle</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
+
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenterTitle"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="hero hero-video-modal modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <video controls autoplay>
+                <source
+                  src="./assets/videos/sportivi-hero-slide-3.webm"
+                  type="video/webm"
+                />
+                Il tuo browser non supporta il tag video.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section
       class="slide d-flex justify-content-center align-items-center pt-6 pt-lg-9"
@@ -253,13 +330,15 @@
         <div class="row d-flex align-items-top gx-lg-6">
           <div class="col-12 col-lg-6">
             <div
-              class="hero-image mb-4 mb-lg-0 p-4 p-lg-5"
+              class="hero hero-link mb-4 mb-lg-0"
               style="
                 background-image: url('./assets/images/home-hero-slide-7-sportivi.svg');
                 aspect-ratio: 4 / 3;
               "
             >
-              <div class="d-flex flex-column justify-content-between h-100">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <div>
                   <!-- Mobile -->
                   <h3 class="d-lg-none">Sei uno sportivo?</h3>
@@ -296,13 +375,15 @@
 
           <div class="col-12 col-lg-6">
             <div
-              class="hero-image mb-4 mb-lg-0 p-4 p-lg-5"
+              class="hero hero-link mb-4 mb-lg-0"
               style="
                 background-image: url('./assets/images/home-hero-slide-7-società.svg');
                 aspect-ratio: 4 / 3;
               "
             >
-              <div class="d-flex flex-column justify-content-between h-100">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <div>
                   <!-- Mobile -->
                   <h3 class="d-lg-none">Sei una società?</h3>
@@ -346,13 +427,15 @@
         <div class="row d-flex align-items-top gx-lg-6">
           <div class="col-12 col-lg-6">
             <div
-              class="hero-image container mb-4 mb-lg-0 p-4 p-lg-5"
+              class="hero hero-link mb-4 mb-lg-0"
               style="
                 background-image: url('./assets/images/home-hero-slide-8-accediregistrati.svg');
                 aspect-ratio: 2 / 1;
               "
             >
-              <div class="d-flex flex-column justify-content-between h-100">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <!-- Mobile -->
                 <h3 class="mb-4 d-lg-none">Accedi o registrati</h3>
 
@@ -385,18 +468,20 @@
 
           <div class="col-12 col-lg-6">
             <div
-              class="hero-image container mb-0 p-4 p-lg-5"
+              class="hero hero-link mb-0"
               style="
                 background-image: url('./assets/images/home-hero-slide-8-scarica.svg');
                 aspect-ratio: 2 / 1;
               "
             >
-              <div class="d-flex flex-column justify-content-between h-100">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <!-- Mobile -->
-                <h3 class="mb-4 d-lg-none">Scarica la app</h3>
+                <h3 class="mb-4 d-lg-none">Scarica l'app</h3>
 
                 <!-- Desktop -->
-                <h1 class="display-6 mb-5 d-none d-lg-block">Scarica la app</h1>
+                <h1 class="display-6 mb-5 d-none d-lg-block">Scarica l'app</h1>
 
                 <div class="d-flex flex-row">
                   <a
@@ -680,6 +765,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
 
     <!-- Custom JavaScript-->
     <script src="./assets/js/main.js"></script>

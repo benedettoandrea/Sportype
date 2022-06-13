@@ -20,7 +20,13 @@ $lead-font-weight: 500;
 $display-font-weight: 500;
 
 // Dropdowns
-$dropdown-border-width: 0px;
+$dropdown-border-width: 0;
+
+// Modals
+$modal-content-border-width: 0;
+$modal-content-border-radius: $spacer * 1.5;
+$modal-backdrop-opacity: 0.8;
+$modal-fade-transform: translate(0, 0);
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -283,21 +289,85 @@ $dropdown-border-width: 0px;
   background-color: #f1f1f1;
 }
 
-.hero-text {
-  border: 1px solid #7885ff;
+.hero {
   border-radius: $spacer * 1.5;
+  overflow: hidden;
 }
 
-.hero-image {
+.hero.hero-text {
+  border: 1px solid #7885ff;
+}
+
+.hero.hero-link {
+  @include mdc-elevation--z6;
+
+  color: white;
+  background-size: 100%;
+  background-position: center center;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-size: 104%;
+    transition: all 0.2s ease-in-out;
+  }
+  .hero-link-overlay {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.hero.hero-image {
   @include mdc-elevation--z6;
   color: white;
-  border-radius: $spacer * 1.5;
+  background-size: 100%;
+  background-position: center center;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-size: 104%;
+    transition: all 0.2s ease-in-out;
+  }
 }
 
-.hero-video-container {
+.hero.hero-video-main {
   @include mdc-elevation--z6;
-  overflow: hidden;
-  border-radius: $spacer * 1.5;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+  }
+  .hero-video-main-overlay {
+    border: 0rem;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(120%);
+      background: rgba(0, 0, 0, 0.6);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.hero.hero-video-side {
+  @include mdc-elevation--z6;
+  aspect-ratio: 4 / 3;
+  background-image: url("../images/video_bg.svg");
+  background-size: 100%;
+  background-position: center center;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-size: 104%;
+    transition: all 0.2s ease-in-out;
+    & > .hero.hero-video-side-backdrop {
+      background: rgba(0, 0, 0, 0.2);
+      transform: scale(1.04);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .hero.hero-video-side-backdrop {
+    aspect-ratio: 4 / 3;
+    transition: all 0.2s ease-in-out;
+  }
 }
 
 .section-break {
@@ -389,6 +459,15 @@ footer .dropdown-menu {
     // necessary for showing it in bigger screens
     @include mdc-elevation--z8;
   }
+
+  .hero.hero-link:hover {
+    background-size: 102%;
+  }
+
+  .hero.hero-image:hover {
+    background-size: 102%;
+  }
+
   #home-slide-1,
   #subpage-slide-1 {
     height: 100vh;

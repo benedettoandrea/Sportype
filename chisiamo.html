@@ -25,6 +25,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Material icons-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -160,8 +163,10 @@
       <div class="container">
         <div class="row d-flex align-items-top gx-lg-6">
           <div class="col-12 col-lg-6">
-            <div class="hero-image mb-4 mb-lg-0 p-4 p-lg-5" id="chisiamo-team">
-              <div class="d-flex flex-column justify-content-between h-100">
+            <div class="hero hero-link mb-4 mb-lg-0" id="chisiamo-team">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <div class="d-flex">
                   <!-- Mobile -->
                   <h3 class="d-lg-none">Il team</h3>
@@ -241,8 +246,10 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <div class="hero-image mb-4 mb-lg-0 p-4 p-lg-5" id="chisiamo-pdf">
-              <div class="d-flex flex-column justify-content-between h-100">
+            <div class="hero hero-link mb-4 mb-lg-0" id="chisiamo-pdf">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <div class="d-flex">
                   <!-- Mobile -->
                   <h3 class="d-lg-none">Ti occupi di design?</h3>
@@ -286,19 +293,21 @@
 
     <section
       class="slide d-flex justify-content-center align-items-center py-6 py-lg-9"
-      id="subpage-slide-8"
+      id="home-slide-8"
     >
       <div class="container">
         <div class="row d-flex align-items-top gx-lg-6">
           <div class="col-12 col-lg-6">
             <div
-              class="hero-image container mb-4 mb-lg-0 p-4 p-lg-5"
+              class="hero hero-link mb-4 mb-lg-0"
               style="
                 background-image: url('./assets/images/home-hero-slide-8-accediregistrati.svg');
                 aspect-ratio: 2 / 1;
               "
             >
-              <div class="d-flex flex-column justify-content-between h-100">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <!-- Mobile -->
                 <h3 class="mb-4 d-lg-none">Accedi o registrati</h3>
 
@@ -331,13 +340,15 @@
 
           <div class="col-12 col-lg-6">
             <div
-              class="hero-image container mb-0 p-4 p-lg-5"
+              class="hero hero-link mb-0"
               style="
                 background-image: url('./assets/images/home-hero-slide-8-scarica.svg');
                 aspect-ratio: 2 / 1;
               "
             >
-              <div class="d-flex flex-column justify-content-between h-100">
+              <div
+                class="hero hero-link-overlay d-flex flex-column justify-content-between h-100 p-4 p-lg-5"
+              >
                 <!-- Mobile -->
                 <h3 class="mb-4 d-lg-none">Scarica la app</h3>
 
@@ -626,6 +637,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
 
     <!-- Custom JavaScript-->
     <script src="./assets/js/main.js"></script>
