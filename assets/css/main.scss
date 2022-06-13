@@ -266,115 +266,10 @@ $modal-fade-transform: translate(0, 0);
 }
 
 // Custom CSS
-// Components
 * {
   font-family: "Sora", sans-serif;
 }
 
-// General rule
-.dropdown .dropdown-menu {
-  @include mdc-elevation--z8;
-}
-
-// Execption for this component for mobile devices. The general rule is reapplied for bigger screens
-#dropdown-menu-account {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.slide {
-  display: block;
-  height: relative;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-.hero {
-  border-radius: $spacer * 1.5;
-  overflow: hidden;
-}
-
-.hero.hero-text {
-  border: 1px solid #7885ff;
-}
-
-.hero.hero-link {
-  @include mdc-elevation--z6;
-
-  color: white;
-  background-size: 100%;
-  background-position: center center;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    background-size: 104%;
-    transition: all 0.2s ease-in-out;
-  }
-  .hero-link-overlay {
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      background: rgba(0, 0, 0, 0.2);
-      transition: all 0.2s ease-in-out;
-    }
-  }
-}
-
-.hero.hero-image {
-  @include mdc-elevation--z6;
-  color: white;
-  background-size: 100%;
-  background-position: center center;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    background-size: 104%;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
-.hero.hero-video-main {
-  @include mdc-elevation--z6;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    transition: all 0.2s ease-in-out;
-  }
-  .hero-video-main-overlay {
-    border: 0rem;
-    background: rgba(0, 0, 0, 0.4);
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      transform: scale(120%);
-      background: rgba(0, 0, 0, 0.6);
-      transition: all 0.2s ease-in-out;
-    }
-  }
-}
-
-.hero.hero-video-side {
-  @include mdc-elevation--z6;
-  aspect-ratio: 4 / 3;
-  background-image: url("../images/video_bg.svg");
-  background-size: 100%;
-  background-position: center center;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    background-size: 104%;
-    transition: all 0.2s ease-in-out;
-    & > .hero.hero-video-side-backdrop {
-      background: rgba(0, 0, 0, 0.2);
-      transform: scale(1.04);
-      transition: all 0.2s ease-in-out;
-    }
-  }
-  .hero.hero-video-side-backdrop {
-    aspect-ratio: 4 / 3;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
-.section-break {
-  @include mdc-elevation--z24;
-}
-
-// Page specific styling
 body {
   background-color: #ffffff;
 }
@@ -412,15 +307,141 @@ body {
   }
 }
 
-#home-slide-1 {
-  background-color: #7885ff;
-  color: white;
+.dropdown .dropdown-menu {
+  // General rule
+  @include mdc-elevation--z8;
 }
 
-#subpage-slide-1 {
+#dropdown-menu-account {
+  // Execption for this element for mobile devices. The general rule is reapplied for bigger screens
+  box-shadow: none;
+}
+
+.slide {
+  height: fit-content;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.slide-page-1 {
+  color: white;
+  background-color: #7885ff;
+}
+
+.slide-subpage-1 {
   background-color: #bbc2ff;
 }
 
+.section-break {
+  @include mdc-elevation--z24;
+}
+
+.hero {
+  overflow: hidden;
+  border-radius: $spacer * 1.5;
+}
+
+.hero.hero-link {
+  @include mdc-elevation--z6;
+  color: white;
+  background-position: center center;
+  background-size: 100%;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-size: 104%;
+    transition: all 0.2s ease-in-out;
+  }
+  .hero-link-overlay {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.hero.hero-image {
+  @include mdc-elevation--z6;
+  color: white;
+  background-position: center center;
+  background-size: 100%;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-size: 104%;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.hero.hero-video-main {
+  @include mdc-elevation--z6;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+  }
+  .hero-video-main-overlay {
+    border: 0rem;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(120%);
+      background: rgba(0, 0, 0, 0.6);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.hero.hero-video-side {
+  @include mdc-elevation--z6;
+  aspect-ratio: 4 / 3;
+  background-image: url("../images/video_bg.svg");
+  background-size: 100%;
+  background-position: center center;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-size: 102%;
+    transition: all 0.2s ease-in-out;
+    & > .hero.hero-video-side-backdrop {
+      background: rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .hero.hero-video-side-backdrop {
+    aspect-ratio: 4 / 3;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.highlight {
+  &:hover {
+    & > .highlight-mark {
+      background-color: #ade807;
+      transition: background 0.2s ease-in-out;
+    }
+  }
+  .highlight-mark {
+    display: inline-block;
+    line-height: 0;
+    border-radius: 1em;
+    padding-top: 0;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    transition: background 0.2s ease-in-out;
+  }
+}
+
+footer {
+  font-size: 0.875rem;
+  background-color: #f1f1f1;
+}
+
+footer .dropdown-menu {
+  font-size: 0.875rem;
+}
+
+// Page specific
 #società-pdf,
 #chisiamo-team,
 #chisiamo-pdf {
@@ -434,30 +455,21 @@ body {
 #chisiamo-team {
   background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
 }
+
 #chisiamo-pdf {
   background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
 }
 
-footer {
-  font-size: 0.875rem;
-  background-color: #f1f1f1;
-}
-
-footer .dropdown-menu {
-  font-size: 0.875rem;
-}
-
 // Media queries
-@include media-breakpoint-up(sm) {
-}
-
-@include media-breakpoint-up(md) {
-}
-
 @include media-breakpoint-up(lg) {
   #dropdown-menu-account {
     // necessary for showing it in bigger screens
     @include mdc-elevation--z8;
+  }
+
+  .slide-page-1,
+  .slide-subpage-1 {
+    height: 100vh;
   }
 
   .hero.hero-link:hover {
@@ -468,23 +480,24 @@ footer .dropdown-menu {
     background-size: 102%;
   }
 
-  #home-slide-1,
-  #subpage-slide-1 {
-    height: 100vh;
+  .hero.hero-video-side {
+    &:hover {
+      background-size: 104%;
+      & > .hero.hero-video-side-backdrop {
+        transform: scale(1.04);
+      }
+    }
   }
+
+  // Page specific
   #società-pdf {
     background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
     aspect-ratio: 16 / 9;
   }
+
   #chisiamo-team,
   #chisiamo-pdf {
     background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
     aspect-ratio: 4 / 3;
   }
-}
-
-@include media-breakpoint-up(xl) {
-}
-
-@include media-breakpoint-up(xxl) {
 }

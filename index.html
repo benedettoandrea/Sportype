@@ -125,7 +125,7 @@
     </nav>
 
     <section
-      class="slide d-flex justify-content-center align-items-center py-6 p-lg-0"
+      class="slide slide-page-1 d-flex justify-content-center align-items-center py-6 p-lg-0"
       id="home-slide-1"
     >
       <div class="container">
@@ -169,8 +169,12 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-6 mb-4 mb-lg-0" id="home-slide-3-headline">
-              Lo sport non è una questione di genere.
+            <h1
+              class="highlight display-6 mb-4 mb-lg-0"
+              id="home-slide-3-headline"
+            >
+              Lo <mark class="highlight-mark">sport</mark> non è una questione
+              di <mark class="highlight-mark">genere</mark>.
             </h1>
           </div>
           <div
@@ -204,8 +208,12 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 ps-lg-6 order-lg-2">
-            <h1 class="display-6 mb-4 mb-lg-0" id="home-slide-4-headline">
-              Ognuno ha il diritto di fare ciò che davvero ama.
+            <h1
+              class="highlight display-6 mb-4 mb-lg-0"
+              id="home-slide-4-headline"
+            >
+              ha il <mark class="highlight-mark">diritto</mark> di fare ciò che
+              davvero <mark class="highlight-mark">ama</mark>.
             </h1>
           </div>
           <div
@@ -239,8 +247,13 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-4 pe-lg-6">
-            <h1 class="display-6 mb-4 mb-lg-0" id="home-slide-5-headline">
-              Crediamo nel valore ispirativo delle storie altrui.
+            <h1
+              class="highlight display-6 mb-4 mb-lg-0"
+              id="home-slide-5-headline"
+            >
+              <mark class="highlight-mark">Crediamo</mark> nel valore
+              <mark class="highlight-mark">ispirativo</mark> delle storie
+              <mark class="highlight-mark">altrui</mark>.
             </h1>
           </div>
           <div
@@ -274,7 +287,7 @@
       <div class="container">
         <div class="hero hero-video-main">
           <div class="ratio ratio-16x9">
-            <video autoplay loop muted>
+            <video preload muted autoplay loop playsinline>
               <source
                 src="./assets/videos/sportivi-hero-slide-3.webm"
                 type="video/webm"
@@ -282,13 +295,13 @@
               Il tuo browser non supporta il tag video.
             </video>
             <a
-              href="#exampleModalCenter"
+              href="#home-hero-video-trailer-modal"
               class="hero hero-video-main-overlay btn btn-lg btn-dark d-flex justify-content-center align-items-center"
               role="button"
-              aria-pressed="true"
+              aria-pressed="false"
               data-bs-toggle="modal"
             >
-              <div class=" ">
+              <div>
                 <span class="material-icons md-48">play_circle</span>
               </div>
             </a>
@@ -299,9 +312,8 @@
 
     <div
       class="modal fade"
-      id="exampleModalCenter"
+      id="home-hero-video-trailer-modal"
       tabindex="-1"
-      aria-labelledby="exampleModalCenterTitle"
       style="display: none"
       aria-hidden="true"
     >
@@ -309,7 +321,7 @@
         <div class="modal-content">
           <div class="hero hero-video-modal modal-body p-0">
             <div class="ratio ratio-16x9">
-              <video controls autoplay>
+              <video id="home-hero-video-trailer" controls>
                 <source
                   src="./assets/videos/sportivi-hero-slide-3.webm"
                   type="video/webm"
@@ -774,5 +786,6 @@
 
     <!-- Custom JavaScript-->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/homeHeroVideoTrailer.js"></script>
   </body>
 </html>

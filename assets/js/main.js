@@ -18,9 +18,9 @@ window.onscroll = () => {
     navbar.classList.remove("navbar-shadow");
   }
 
-  if (document.getElementById("home-slide-1") != null) {
+  if (document.querySelector(".slide-page-1") != null) {
     // home page
-    if (window.scrollY > document.getElementById("home-slide-1").offsetHeight) {
+    if (window.scrollY > document.querySelector(".slide-page-1").offsetHeight) {
       navbar.classList.add("navbar-light", "bgneutral");
       navbar.classList.remove("navbar-dark");
       document
@@ -36,7 +36,7 @@ window.onscroll = () => {
   } else {
     // sub pages
     if (
-      window.scrollY > document.getElementById("subpage-slide-1").offsetHeight
+      window.scrollY > document.querySelector(".slide-subpage-1").offsetHeight
     ) {
       navbar.classList.add("bgneutral");
       navbar.classList.remove("bgcolor");
