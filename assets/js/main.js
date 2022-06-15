@@ -25,7 +25,7 @@ window.onscroll = () => {
       navbar.classList.remove("navbar-dark");
       document
         .querySelector("meta[name=theme-color]")
-        .setAttribute("content", "#f1f1f1");
+        .setAttribute("content", "#f7f7f7");
     } else {
       navbar.classList.add("navbar-dark");
       navbar.classList.remove("navbar-light", "bgneutral");
@@ -42,7 +42,7 @@ window.onscroll = () => {
       navbar.classList.remove("bgcolor");
       document
         .querySelector("meta[name=theme-color]")
-        .setAttribute("content", "#f1f1f1");
+        .setAttribute("content", "#f7f7f7");
     } else {
       navbar.classList.add("bgcolor");
       navbar.classList.remove("bgneutral");
