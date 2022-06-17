@@ -393,7 +393,7 @@ body {
 .hero.hero-video-side {
   @include mdc-elevation--z6;
   aspect-ratio: 4 / 3;
-  background-image: url("../images/video_bg.svg");
+  background-image: url("../images/hero-slide-4x3.svg");
   background-size: 100%;
   background-position: center center;
   transition: all 0.2s ease-in-out;
@@ -442,22 +442,9 @@ footer .dropdown-menu {
 }
 
 // Page specific
-#società-pdf,
-#chisiamo-team,
-#chisiamo-pdf {
-  aspect-ratio: 3 / 4;
-}
-
 #società-pdf {
-  background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
-}
-
-#chisiamo-team {
-  background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
-}
-
-#chisiamo-pdf {
-  background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
+  background-image: url("../images/Frame153.svg");
+  aspect-ratio: 3 / 4;
 }
 
 // Media queries
@@ -491,13 +478,7 @@ footer .dropdown-menu {
 
   // Page specific
   #società-pdf {
-    background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
+    background-image: url("../images/Frame152.svg");
     aspect-ratio: 16 / 9;
-  }
-
-  #chisiamo-team,
-  #chisiamo-pdf {
-    background-image: url("../images/home-hero-slide-8-accediregistrati.svg");
-    aspect-ratio: 4 / 3;
   }
 }
